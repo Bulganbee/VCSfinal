@@ -62,4 +62,4 @@ meter {
 :where([draggable="true"]) { -webkit-user-drag: element }
 
 /* Remove details/summary styles. */
-::-webkit-details-marker { display: none }
+::-webkit-details-marker { display: none } 
