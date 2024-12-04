@@ -97,8 +97,8 @@
 		</article>
 		
 		<div class="dropdown">
-			<h2 id="micro">Micro-Responses On Usability</h2>
-
+			<h2 id="micro">See micro-responses on usability&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F441;</h2>
+			<div class="dropdown-content">
 		<p class="microresponse-drop"> &#9679; "All of the biggest and most brilliant design ideas have always come from the little things. So, as designers, we should carefully observe everything as much as we can. Otherwise, we might miss significant opportunities in future designs."</p>
 		<p class="microresponse-drop"> &#9679; "This is an example-based article. I like how designers reflect and optimize their design based on the needs of users they find in their daily lives. Communication function should always be the primary consideration in design."</p>
 		<p class="microresponse-drop"> &#9679; "Reflecting on Hara’s insights, I view design as a profound journey that begins with humanity’s earliest use of tools, transforming simple objects into complex creations through intellect. True creativity, as Hara suggests, blends diverse cultural wisdom with modern thought, highlighting that design is not just about the creating latest innovations but also about preserving subtle, often overlooked rich values from the past amid ongoing technological and societal changes."</p>
@@ -130,6 +130,7 @@
 		<p class="microresponse-drop">&#9679; "Understanding that real-world objects are in a constant state of motion and influenced by our actions is a powerful insight from Chan. As an iPhone user, I have never faced any difficulties using its user interface (despite constant updates); it has always felt very natural. The concept of 'working with behavior rather than animation' resonates deeply with me and has shifted my perspective on interface design, including the previous reading. After watching the video, I realized that the world is quite literally at your fingertips."</p>
 		<p class="microresponse-drop">&#9679; "During our Major Studio 1 class, Clara said that when you design for everyone, you design for no one. Growing up in a high-context Asian American household while being part of a low-context community has made me more aware of how different cultures interpret information. This experience helps me prioritize inclusivity in my design process, ensuring I create work considering diverse communication styles and cultural perspectives."</p>
 		<p class="microresponse-drop">&#9679; "Author emphasis on the importance of understanding history reminds readers that the future is often shaped by the past. Past experiences can have a profound impact on a person's future behavior, mental health, and attitude towards life. For example, if a person has experienced a traumatic event, they may exhibit psychological problems such as anxiety and depression in their future life. In addition, past experiences can also affect a person's expectations and confidence in the future. So, the lessons learned from the past have immeasurable value in addressing the complexity of human behavior and social evolution."</p>
+	</div>
 
 </div>
 		<!--Footer of the webpage-->
@@ -141,6 +142,15 @@
 				
 			</script>
 
-
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+	  const dropdownHeader = document.getElementById("micro");
+	  const dropdown = dropdownHeader.parentElement;
+  
+	  dropdownHeader.addEventListener("click", function () {
+		dropdown.classList.toggle("open"); // Toggle the "open" class
+	  });
+	});
+  </script>
 	</body>
 </html> 

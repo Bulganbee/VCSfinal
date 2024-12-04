@@ -38,7 +38,7 @@ h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: bolder;
     font-size: 32px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 .footerheader {
     font-family: "Montserrat", sans-serif;
@@ -71,10 +71,16 @@ article {
 	padding: 20px;
 }
 .dropdown {
-    overflow: hidden;
-    height: 40px;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
 }
+
+.dropdown-content {
+    display: none; /* Hidden by default */
+  }
+  
+  .dropdown.open .dropdown-content {
+    display: block; /* Show when the dropdown is open */
+  }
 p {
 	line-height: 175%;
 	margin-top: 30px;
