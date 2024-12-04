@@ -2,6 +2,10 @@ header {
     padding-top: 100px;
     line-height: 40px;
 }
+mark {
+    background-color: bisque;
+    border: 1px solid;
+}
 h1 {
 	color: #282620;
 	font-size: 60px;
@@ -10,19 +14,31 @@ h1 {
 	line-height: 130%;
 	margin-bottom: 1%;
 }
-h2 {
+#secondtitle {
     font-family: "Montserrat", sans-serif;
 	font-weight: bold;
-    font-size: 54px;
+    font-size: 28.5px;
+    background-color: bisque;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 12px;
 }
 
 .author {
-	font-size: 20px;
+	font-size: 24px;
+    font-weight: 550;
     font-family: "Montserrat", sans-serif;
 	margin-top: calc(var(--margin-top-author) * 2);
 	padding-left: 20px;
-	border-color: rgb(134, 81, 1);
-	border-left: 3px solid;
+	border-color: rgb(241, 152, 43);
+	border-left: 2px solid;
+}
+#micro {
+    border-bottom: 2px solid;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    font-size: 32px;
+    padding-bottom: 10px;
 }
 .footerheader {
     font-family: "Montserrat", sans-serif;
@@ -39,8 +55,14 @@ body {
 	margin-right: 25%;
 }
 article {
-	padding-bottom: 60px;
+	padding-bottom: 100px;
 	
+}
+.microresponse-drop {
+    background-color: bisque;
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 12px;
 }
 .microresponse {
 	background-color: bisque;
@@ -48,7 +70,11 @@ article {
 	text-align: center;
 	padding: 20px;
 }
-
+.dropdown {
+    overflow: hidden;
+    height: 40px;
+    padding-bottom: 100px;
+}
 p {
 	line-height: 175%;
 	margin-top: 30px;
@@ -62,15 +88,6 @@ h3 {
 }
 h2 {
     font-size: 24px;
-}
-.dropdown {
-    background: yellow;
-    overflow: hidden;
-    height: 50px;
-    border-bottom: 1px solid;
-    position: relative;
-    display: inline-block;
-    padding-bottom: 100px;
 }
 
 #frame {
@@ -90,7 +107,7 @@ h2 {
 
 #slides {
     padding: 5px;
-    border: 1px solid;
+    border: 2px solid;
 	border-radius: 12px;
     background: bisque;
     position: relative;
@@ -144,7 +161,10 @@ h2 {
     z-index: 3;
     position: relative;
 }
-
+footer {
+    text-align: center;
+    padding-bottom: 100px;
+}
 #controls label {
     transition: opacity 0.2s ease-out;
     display: none;
@@ -160,7 +180,7 @@ h2 {
 
 #controls label:hover {
     opacity: 1;
-    background-color: rgb(179, 251, 157);
+    background-color: rgb(241, 152, 43);
 }
 
 /* Right control labels */
@@ -196,7 +216,7 @@ h2 {
     width: 10px;
     height: 10px;
     border-radius: 100%;
-    background: #ccc;
+    background: rgb(247, 208, 161);
     margin: 0 10px;
 }
 
@@ -205,24 +225,5 @@ h2 {
 #frame3:checked~#bullets label:nth-child(3),
 #frame4:checked~#bullets label:nth-child(4),
 #frame5:checked~#bullets label:nth-child(5) { /* New bullet styling */
-    background: #444;
-}
+    background: rgb(236, 158, 63);
 
-@media screen and (max-width: 900px) {
-
-    #frame1:checked~#controls label:nth-child(2),
-    #frame2:checked~#controls label:nth-child(3),
-    #frame3:checked~#controls label:nth-child(4),
-    #frame4:checked~#controls label:nth-child(1),
-    #frame1:checked~#controls label:nth-last-child(2),
-    #frame2:checked~#controls label:nth-last-child(3),
-    #frame3:checked~#controls label:nth-last-child(4),
-    #frame4:checked~#controls label:nth-last-child(1) {
-        margin: 0;
-    }
-
-    #slides {
-        max-width: calc(100% - 140px);
-        margin: 0 auto;
-    }
-}
