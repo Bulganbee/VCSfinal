@@ -1,18 +1,7 @@
- /* Header section */
- header {
-	background-color: var(--header-background-color);
-	color: #130e07;
-	padding-top: calc(var(--padding-top) * 2.2);
-	padding-bottom: calc(var(--padding-bottom) * 2.2);
-	padding-left: calc(var(--padding-left) * 2);
-	font-family: "Libre Franklin", sans-serif;
-	position: relative;
-	z-index: 2;
-}
 
 h1 {
 	color: #282620;
-	font-size: calc(var(--root-size-h1) * 1.8);
+	font-size: 20px;
 	font-weight: bold;
 	line-height: 145%;
 	margin-bottom: 1%;
@@ -32,26 +21,24 @@ h2 {
 }
 /* Main body section styling */
 body {
-	font-size: var(--root-size);
-	font-family: "Libre Baskerville", serif;
+	font-size: 17px;
+	font-family: 'Open sans';
 	color: black;
 }
 article {
-	padding-top: 2%;
-	padding-bottom: var(--article-padding-bottom);
-	margin: 15px;
+	padding-bottom: 100px;
+	margin-left: 25%;
+	margin-right: 25%;
 }
+
 p {
-	line-height: 170%;
+	line-height: 175%;
 	margin-top: 30px;
+	width: 80ch;
 }
 h3 {
 	font-family: "Libre Franklin", sans-serif;
 	font-weight: bold;
-	font-size: calc(var(--root-size-h3) * 2);
+	font-size: 32px;
 	margin-bottom: 3px;
-}
-section {
-	margin-top: var(--margin-top-section);
-	margin-bottom: var(--section-margin-bottom);
 }
